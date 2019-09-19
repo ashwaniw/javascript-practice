@@ -20,6 +20,6 @@ function Magazine(title,author,year,month){
 Magazine.prototype = Object.create(Book.prototype);
 const mag1 = new Magazine('Mag1', 'John Doe',2014,'Jan');
 
-// use magazine constructor
+// if use magazine constructor
 Magazine.prototype.constructor = Magazine;
 console.log(mag1)

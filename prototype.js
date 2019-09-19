@@ -16,7 +16,6 @@ Book.prototype.getAge = function(){
 }
 
 // Revise
-
 Book.prototype.revise = function(newYear){
     this.year = newYear;
     this.revised =  true;

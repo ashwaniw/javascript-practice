@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>JavaScript :: Practice</title>
+		
+		<!--<script type="text/javascript" src="string.js"></script>-->
+		
+	</head>
+
+<body>
+	<h3 id="demo">JavaScript Test</h3>
+	<h4 id="annonymous_function" style="font-weight: normal;"></h5>
+	<h4 id="arrow_function" style="font-weight: normal;"></h5>
+	<button type="button">Get Value</button>
+	<br>
+	<script>
+		function show1(){
+			x = 5;
+			console.log(x);			
+		}
+		show1();
+		console.log(x);
+		
+		if(true){
+			var a = 20;
+			console.log(a);
+		}
+		console.log(a);
+	
+	var s = 50;
+	console.log(s);
+	var v = 70;
+	console.log(s + " " + v);
+	
+	
+	
+	
+	(function (){document.write("Hello")})();
+		function magazine(magName){
+			var arg = 101;
+			magName(arg);
+		}
+		var arr = [10,20,3,40,50,50,60,70]
+		function show([value1,value2, ...rest]){
+			console.log(value1);
+			console.log(value2);
+			console.log(rest);
+		}
+		show(arr)
+		// callback function
+		magazine( function book(arg){
+				document.getElementById("demo").innerHTML = "I am book function " + arg;
+			}
+		);
+		
+		// annonymous function
+		magazine( function(arg){
+			document.getElementById("annonymous_function").innerHTML = "Hi i am Annonymous function " + arg;
+		})
+		
+		// arrow function
+		magazine( arg => document.getElementById("arrow_function").innerHTML = "Hi i am Arrow function " + arg)
+	</script>
+</body
+</html>

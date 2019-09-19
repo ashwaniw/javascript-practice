@@ -10,7 +10,6 @@ const book1 = {
 }
 
 //console.log(book1.getSummary());
-
 // Constructor
 function Book(title, author, year){
     this.title = title;
@@ -32,8 +31,7 @@ function person(){
 	this.lastname = "ram";
 	this.getfullname = function(){
 		alert ('hello friends');
-	}
-	
+	}	
 }
 
 var person1 = new person();

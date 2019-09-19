@@ -7,7 +7,6 @@ class Book {
     getSummary() {
         return `${this.title} is written by ${this.author} in ${this.year}`
     }
-
 }
 
 class Magazine extends Book {
