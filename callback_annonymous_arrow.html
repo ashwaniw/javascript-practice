@@ -12,31 +12,39 @@
 	<h3 id="demo">JavaScript Test</h3>
 	<h4 id="annonymous_function" style="font-weight: normal;"></h5>
 	<h4 id="arrow_function" style="font-weight: normal;"></h5>
-	<button type="button">Get Value</button>
+	<button type="button" onClick="show()">Get Value</button>
 	<br>
 	<script>
-		function show1(){
-			x = 5;
-			console.log(x);			
+		//"use strict";
+		function show(){			
+			var x = 5;
+			//console.log(x);				
+			function showInner(){
+				let m = 32;
+				//console.log(m);								
+			}
+			showInner();
+			//console.log(m);
 		}
-		show1();
-		console.log(x);
-		
+		show();
+		//console.log(x);			
 		if(true){
-			var a = 20;
-			console.log(a);
+			 
+			//console.log(a);
 		}
-		console.log(a);
+		//console.log(a);
 	
-	var s = 50;
-	console.log(s);
-	var v = 70;
-	console.log(s + " " + v);
+	/*var s = 50;	
+		var v = 70;
+		console.log(s + " " + v);*/
 	
+	p = 10;
+	q = p;
+	q = 5;
+	document.write("p = ", p + "<br>");	
+	document.write("q = ", q);
 	
-	
-	
-	(function (){document.write("Hello")})();
+	/*(function (){document.write("Hello")})();	  
 		function magazine(magName){
 			var arg = 101;
 			magName(arg);
@@ -60,7 +68,8 @@
 		})
 		
 		// arrow function
-		magazine( arg => document.getElementById("arrow_function").innerHTML = "Hi i am Arrow function " + arg)
+		magazine( arg => document.getElementById("arrow_function").innerHTML = "Hi i am Arrow function " + arg)*/		
+		
 	</script>
 </body
 </html>

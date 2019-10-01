@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>JavaScript :: Practice</title>		
+		<!--<script type="text/javascript" src="string.js"></script>-->		
+	</head>
+<body>
+	<h3 id="demo">JavaScript Test</h3>
+	
+	<button type="button" onclick="clearInt()">Clear Interval</button>
+	<script>
+		console.log(1);
+		setTimeout( function()  {
+			console.log("Hi, i am setTimeout");
+		}, 0);
+		console.log(2);
+		
+		var myInterval = setInterval( function() {
+			console.log("India")
+		}, 1000);
+		
+		function clearInt(){
+			clearInterval(myInterval);
+		}
+		
+	</script>
+</body
+</html>
